@@ -1411,6 +1411,9 @@ border-radius: 6px;
 }
 
 .active1 .menu-item__header .menu-img{
+    width: 12px;
+    height: 12px;
+    background-size: contain;
     background-image: url('../img/Frame 2.svg');
 }
 /*fsfexvdxfvdfbgsbdgnbxrvbfgfnbxgbfxnffsfes*/
