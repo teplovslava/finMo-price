@@ -45,8 +45,14 @@ document.addEventListener('DOMContentLoaded',function(){
       menuItem.forEach(item=>{
           item.classList.remove('active')
           item.addEventListener('click',function(){
-            menuItem.forEach(li=>li.classList.remove('active'))
-                  item.classList.add('active')
+            if(item.classList.contains('active')){
+              item.classList.remove('active')
+            }else
+              {
+                menuItem.forEach(li=>li.classList.remove('active'))
+            
+                item.classList.add('active')
+              }
       })}
           
       )
@@ -73,13 +79,19 @@ document.addEventListener('DOMContentLoaded',function(){
 
     
       burgerMainMenu.forEach(item=>{
-          item.classList.remove('active1')
-          item.addEventListener('click',function(){
-            burgerMainMenu.forEach(li=>li.classList.remove('active1'))
-                  item.classList.add('active1')
-      })}
+        item.classList.remove('active1')
+        item.addEventListener('click',function(){
+          if(item.classList.contains('active1')){
+            item.classList.remove('active1')
+          }else
+            {
+              menuItem.forEach(li=>li.classList.remove('active1'))
           
-      )
+              item.classList.add('active1')
+            }
+    })}
+        
+    )
       
 
       MainBurgerCloseBtn.addEventListener('click',()=>{
